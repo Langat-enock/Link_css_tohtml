@@ -21,3 +21,34 @@ class Solution:
                     current_gap += 1
 
         return max_gap
+
+
+
+
+
+## define fobonacci 
+
+def fibonacci(n):
+    """
+    Generate and print the first n Fibonacci numbers.
+
+    Fibonacci sequence:
+    0, 1, 1, 2, 3, 5, 8, ...
+
+    Parameters:
+    n (int): Number of terms to generate
+
+    Returns:
+    None
+    """
+
+    # Initialize the first two numbers
+    a, b = 0, 1
+
+    # Loop n times
+    for _ in range(n):
+        print(a, end=" ")  # Print current number
+        a, b = b, a + b    # Update values
+
+# Example usage
+fibonacci(10)
